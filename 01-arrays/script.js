@@ -38,7 +38,14 @@ console.log(teachers)
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+const isFabioPresent = [];
+
+for (let i=0; i < teachers.length; i++){
+  if (teachers[i] === 'Fabio') {
+    isFabioPresent.push(true);
+    }
+}
+console.log(isFabioPresent)
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
