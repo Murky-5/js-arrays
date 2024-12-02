@@ -27,3 +27,13 @@ console.log(longNames)
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
+let removeName = "Ed"
+
+for (let i = 0; i < teachers.length; i++){
+  if (teachers[i] === removeName){
+    removeName = teachers.splice(i,1);
+  }
+}
+
+console.log(`the name "${removeName}". Has been removed from your list`)
+console.log(teachers)
